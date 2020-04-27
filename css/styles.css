@@ -1,0 +1,77 @@
+html {
+    font-size: 62.5%; /*Reset para REMS - 62.5% = 10px de 16px | 1 rem = 10px  */
+    box-sizing: border-box; /*Aplicar correctamente box-sizing*/
+}
+*, *:before, *:after { /*Aplicar correctamente box-sizing*/
+    box-sizing: inherit; /*Aplicar correctamente box-sizing*/
+}
+
+body {
+    font-family: 'Lato', sans-serif; /*Establecimos el tipo de fuente para todo el documento*/
+    font-size: 1.6rem; /*Para establecer un tamaño estandar a todo el font-size del documento;*/
+}
+
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!- Globales -!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+img {
+    max-width: 100%; /* Para ajustar las imagenes al contenedor padre*/
+}
+
+/*---------------utilidades-----------------*/
+.ctn-800px {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.ctn-1000px {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/*---------Medidas estandar para titulos-----------*/
+h1 {
+    font-size: 4rem;
+}
+h2 {
+    font-size: 3.6rem;
+}
+h3 {
+    font-size: 3.2rem;
+    
+}
+h4 {
+    font-size: 2.8rem;
+}
+
+/*---------------------------------------------------Header----------------------------------------------------*/
+header {
+    height: 4rem;
+    background-color: #7ebdb4;
+}
+.header-main-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.header-main-container a {
+    text-decoration: none;
+    color: #ffffff;
+}
+.header-main-container i {
+    margin-right: .5rem;
+}
+.header-main-container .facebook:hover {
+    color: #4267b2;
+}
+.header-main-container .twitter:hover {
+    color: #1d9ceb;
+}
+.header-main-container .instagram:hover {
+    color: #fdd1c8;
+}
+.header-main-container .linkedin:hover {
+    color: #0077b5;
+}
+
+
