@@ -57,7 +57,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
 }
 .header-main-container a {
     text-decoration: none;
@@ -84,11 +83,13 @@ main {
     background-color: #e6e9ed;
     display: flex;
     align-items: center;
+    line-height: 2rem;
 }
 .profile-main-container {
     display: block;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 2rem;
 }
 .profile-image {
     margin: 2rem 0;
@@ -104,8 +105,15 @@ main {
     align-self: flex-start;
 }
 .profile-description h1 {
-    margin: 0;
+    margin: 1rem 0 2rem;
 } 
+.profile-description p a {
+    color: #8d8d8d;
+    text-decoration: none;
+}
+.profile-description p a:hover {
+    text-decoration: underline;
+}
 
 /*----------------------------------------------section proyectos----------------------------------------------------*/
 .proyectos-main-container {
@@ -152,7 +160,7 @@ main {
 .carousel-item {
     display: inline-block; /*para que las cartas se posicionen al lado*/
     width: 20rem;
-    height: 25rem;
+    height: 21rem;
     margin-right: 1rem;
     padding: 1rem;
     background-color: #519a90;
@@ -168,18 +176,23 @@ main {
     text-align: center;
     margin-top: 1rem;
     white-space: normal;
+    margin-bottom: 1rem;
 }
-.carousel-item p {
+.carousel-item-description {
+    display: flex;
+    flex-direction: column;
+}
+.carousel-item-description p {
     font-size: 1rem;
     white-space: normal;
 }
-.carousel-item a {
+.carousel-item-description a {
     color:#ffffff;
     margin-bottom: 1rem;
     font-size: 1rem;
-    display: block;
+    display: inline-block;
 }
-.carousel-item a:hover {
+.carousel-item-description a:hover {
     color: #97cac4;
 }
 .carousel-item:hover ~ .carousel-item { /*cuando hacemos hover a los items el carrousel, para que los otros item se acomoden tambien*/
