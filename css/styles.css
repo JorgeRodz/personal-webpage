@@ -92,6 +92,9 @@ main {
 .profile-image {
     flex-basis: calc(40% - 1rem);
 }
+.profile-image img {
+    border-radius: 1rem;
+}
 .profile-description {
     flex-basis: calc(60% - 1rem);
     align-self: flex-start;
