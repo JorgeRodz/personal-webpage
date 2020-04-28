@@ -27,6 +27,9 @@ img {
     max-width: 1000px;
     margin: 0 auto;
 }
+.pdn-2 {
+    padding: 0 2rem;
+}
 
 /*---------Medidas estandar para titulos-----------*/
 h1 {
@@ -45,9 +48,9 @@ h4 {
 
 /*---------------------------------------------------Header----------------------------------------------------*/
 header {
-    height: 6rem;
+    height: 4rem;
     background-color: #519a90;
-    font-size: 2rem;
+    font-size: 1.4rem;
 }
 .header-main-container {
     height: 100%;
@@ -78,21 +81,22 @@ header {
 
 /*---------------------------------------------------Main----------------------------------------------------*/
 main {
-    height: 55rem;
     background-color: #e6e9ed;
     display: flex;
     align-items: center;
 }
 .profile-main-container {
-    height: 40rem;
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: space-between;
 }
 .profile-image {
+    margin: 2rem 0;
+    text-align: center;
     flex-basis: calc(40% - 1rem);
 }
 .profile-image img {
+    width: 60%;
     border-radius: 1rem;
 }
 .profile-description {
