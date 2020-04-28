@@ -15,6 +15,7 @@ body {
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!- Globales -!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 img {
     max-width: 100%; /* Para ajustar las imagenes al contenedor padre*/
+    max-height: 100%; /* Para ajustar las imagenes al contenedor padre*/
 }
 
 /*---------------utilidades-----------------*/
@@ -44,8 +45,9 @@ h4 {
 
 /*---------------------------------------------------Header----------------------------------------------------*/
 header {
-    height: 4rem;
-    background-color: #7ebdb4;
+    height: 6rem;
+    background-color: #519a90;
+    font-size: 2rem;
 }
 .header-main-container {
     height: 100%;
@@ -65,7 +67,7 @@ header {
     color: #4267b2;
 }
 .header-main-container .twitter:hover {
-    color: #1d9ceb;
+    color: #e0f4f1;
 }
 .header-main-container .instagram:hover {
     color: #fdd1c8;
@@ -74,4 +76,126 @@ header {
     color: #0077b5;
 }
 
+/*---------------------------------------------------Main----------------------------------------------------*/
+main {
+    height: 55rem;
+    background-color: #e6e9ed;
+    display: flex;
+    align-items: center;
+}
+.profile-main-container {
+    height: 40rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.profile-image {
+    flex-basis: calc(40% - 1rem);
+}
+.profile-description {
+    flex-basis: calc(60% - 1rem);
+    align-self: flex-start;
+}
+.profile-description h1 {
+    margin: 0;
+} 
 
+/*----------------------------------------------section proyectos----------------------------------------------------*/
+.proyectos-main-container {
+    margin: 5rem auto;
+}
+.proyectos-main-container h2 {
+    text-align: center;
+    margin: 0;
+    border-bottom: 1px solid #cfcfcf;
+    padding-bottom: 1rem;
+}
+
+/*---------------Carousel-----------------------------*/
+.carousel {
+    width: 100%;
+    position: relative;
+    overflow-x: scroll; /*para que se puede hacer scroll*/
+}
+
+/*-----scrollbar------*/
+.carousel::-webkit-scrollbar {
+    height: .8rem;
+}
+.carousel::-webkit-scrollbar-track {
+    background-color: #d6d6d6;
+}
+.carousel::-webkit-scrollbar-track:hover {
+    background-color: #a3a3a3;
+}
+.carousel::-webkit-scrollbar-thumb {
+    background-color: #5f6368;
+    border-radius: 4px;
+}
+.carousel::-webkit-scrollbar-thumb:hover {
+    background-color: #000000;
+}
+/*-----scrollbar------*/
+
+.carousel-container {
+    white-space: nowrap; /*Para que los elementos agregagados no se apilen en el contenedor*/
+    margin: 7rem 0;
+    padding-bottom: 1rem;
+}
+.carousel-item {
+    display: inline-block; /*para que las cartas se posicionen al lado*/
+    width: 20rem;
+    height: 25rem;
+    margin-right: 1rem;
+    padding: 1rem;
+    background-color: #519a90;
+    color: #ffffff;
+    border-radius: 2rem;
+    overflow: hidden; /*para esconder las esquinas de la images y se aplique el border-radius*/
+    /*---------para las transiciones-------------*/
+    transition: 450ms; /*para que se vea el efecto de la transicion*/
+    transform-origin: center left; /*acomodamos los items para cuando se realice la transicion*/
+}
+.carousel-item h4 {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 1rem;
+    white-space: normal;
+}
+.carousel-item p {
+    font-size: 1rem;
+    white-space: normal;
+}
+.carousel-item a {
+    color:#ffffff;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    display: block;
+}
+.carousel-item a:hover {
+    color: #97cac4;
+}
+.carousel-item:hover ~ .carousel-item { /*cuando hacemos hover a los items el carrousel, para que los otros item se acomoden tambien*/
+    transform: translate3d(10rem, 0, 0); /*para aplicar la animacion*/
+}
+.carousel-container:hover .carousel-item { /*para que a los items a los cuales no se les hace hover muestren una opacidad*/
+    opacity: 0.3; /*para que los items a los que no se le hace :hover muestren una opacidad*/
+}
+.carousel-container:hover .carousel-item:hover { /*para que al item al que se le posiciona el cursor aumente de tamaño,y haga el efecto de que esta seleccionado*/
+    transform: scale(1.5); /*aumentamos su tamaño*/
+    opacity: 1; /*para que se muestre sin la opacidad*/
+}
+
+
+
+/*---------------------------------------------------Footer----------------------------------------------------*/
+footer {
+    background-color: #7ebdb4;
+    width: 100%;
+    height: 4rem;
+    line-height: 4rem; /*para centrar el <p>*/
+    text-align: center;
+}
+footer p {
+    margin: 0; /*quitamos los margenes por default*/
+}
