@@ -19,9 +19,11 @@
     }
     .profile-image {
         margin: 0;
+        display: flex;
     }
     .profile-image img {
         width: 100%;
+        object-fit: cover;
     }
     .profile-description h1 {
         margin: 1rem 0 4rem;
